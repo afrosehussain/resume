@@ -191,12 +191,19 @@ button:hover{
 .col i{
 	margin: 10px 0;
 }
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1200px){
 	.card{
-		width: 80%;
+		width: 40%;
 		height: 380px;
 	}
 }
+ @media screen and (max-width: 800px){
+ 	.card{
+ 		width: 80%;
+ 		height: 380px;
+ 	}
+ }
+
  /*skills section*/
  .skill-card{
 	width: 40%;
@@ -221,7 +228,12 @@ button:hover{
 .skill-card .fill{
 	color: #FFD369;
 }
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1200px){
+	.skill-card{
+		width: 40%;
+	}
+}
+@media screen and (max-width: 700px){
 	.skill-card{
 		width: 80%;
 	}
@@ -290,15 +302,15 @@ button:hover{
 	display: inline-block;
 	color: #222831;
 }
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1200px){
 	.achcard{
-		width: 80%;
+		width: 40%;
 		height: 600px;
 	}
 }
  @media screen and (max-width: 800px){
  	.achcard{
- 		width: 95%;
+ 		width: 80%;
  		height: 600px;
  	}
  }
@@ -325,7 +337,7 @@ button:hover{
 	color: #EEEEEE;
 	transition: 0.3s;
 }
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1200px){
 	.concard{
 		width: 90%;
 	}
