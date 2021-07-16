@@ -32,7 +32,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 700px){
+@media only screen and (max-width: 600px){
 	.mynav a {display: none;}
 	.mynav a .icon{
 		display: block;
@@ -40,7 +40,7 @@
 	}
 }
 
-@media screen and (max-width: 700px){
+@media only screen and (max-width: 600px){
 	.mynav .responsive{
 		position: relative;
 	}
@@ -69,6 +69,7 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	width: 15%;
 }
 
 .intro h1,h2{
@@ -137,24 +138,36 @@ button:hover{
   	-webkit-text-fill-color: transparent;
 }
 
+ @media only screen and (min-width: 400px) and (max-width: 1000px){
+ 	.intro img{
+ 		width: 60%;
+ 	}
+ 	.intro h1,h2,p{
+ 		font-size: 2.5em;
+ 	}
+ 	.intro p{
+ 		width: 70%;
+ 	}
+ 	.intro a{
+ 		display: block;
+ 		margin: 12px;
+ 	}
+ 	.intro button{
+ 		font-size: 2.5em;
+ 	}
+ }
 /*common template*/
 #academic, #skill, #project, #achieve, #contact{
 	background-color: #222831;
 	padding: 60px 66px;
 	text-align: center;
 }
-#academic h1, #skill h1, #project h1, #achieve h1, #contact h1{
+#academic span, #skill span, #project span, #achieve span, #contact span{
 	font-family: 'Poppins', sans-serif;
 	font-size: 3em;
-	color: #EEEEEE;
-}
-#yline{
-	width: 10%;
-	margin: auto;
-	height: 5px;
+	color: #222831;
 	background-color: #FFD369;
-	border: 0;
-	border-radius: 10%;
+	margin: auto;
 	margin-bottom: 16px;
 }
 /*Academic section*/
@@ -191,16 +204,13 @@ button:hover{
 .col i{
 	margin: 10px 0;
 }
-@media screen and (max-width: 1200px){
-	.card{
-		width: 40%;
-		height: 380px;
-	}
-}
- @media screen and (max-width: 800px){
+
+@media only screen and (min-width: 400px) and (max-width: 1000px){
  	.card{
- 		width: 80%;
+ 		width: 60%;
  		height: 380px;
+ 		position: relative;
+ 		left: 20%;
  	}
  }
 
@@ -228,12 +238,12 @@ button:hover{
 .skill-card .fill{
 	color: #FFD369;
 }
-@media screen and (max-width: 1200px){
+/*@media screen and (max-width: 1200px){
 	.skill-card{
 		width: 40%;
 	}
-}
-@media screen and (max-width: 700px){
+}*/
+@media only screen and (max-width: 600px){
 	.skill-card{
 		width: 80%;
 	}
@@ -302,13 +312,13 @@ button:hover{
 	display: inline-block;
 	color: #222831;
 }
-@media screen and (max-width: 1200px){
+/*@media screen and (max-width: 1200px){
 	.achcard{
 		width: 40%;
 		height: 600px;
 	}
-}
- @media screen and (max-width: 800px){
+}*/
+ @media only screen and (max-width: 600px){
  	.achcard{
  		width: 80%;
  		height: 600px;
@@ -337,7 +347,7 @@ button:hover{
 	color: #EEEEEE;
 	transition: 0.3s;
 }
-@media screen and (max-width: 1200px){
+@media only screen and (max-width: 600px){
 	.concard{
 		width: 90%;
 	}
